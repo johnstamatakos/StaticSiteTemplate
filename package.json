@@ -10,10 +10,31 @@
     "type": "git",
     "url": "git+https://github.com/johnstamatakos/StaticSiteTemplate.git"
   },
-  "author": "",
+  "author": "John Stamatakos",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/johnstamatakos/StaticSiteTemplate/issues"
   },
-  "homepage": "https://github.com/johnstamatakos/StaticSiteTemplate#readme"
+  "homepage": "https://github.com/johnstamatakos/StaticSiteTemplate#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "browserify": "^13.0.1",
+    "browserify-shim": "^3.8.1",
+    "event-stream": "^3.3.4",
+    "glob": "^7.0.5",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.5.4",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.2.2",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "font-awesome": "^4.6.3",
+    "jquery": "^3.1.0"
+  }
 }
