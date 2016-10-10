@@ -1,0 +1,19 @@
+{
+  "name": "static-site-template",
+  "version": "1.0.0",
+  "description": "Template for Static Sites",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnstamatakos/StaticSiteTemplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnstamatakos/StaticSiteTemplate/issues"
+  },
+  "homepage": "https://github.com/johnstamatakos/StaticSiteTemplate#readme"
+}
