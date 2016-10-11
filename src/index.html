@@ -12,14 +12,51 @@
 
   </head>
   <body id="index">
+    <video playsinline autoplay muted loop id="bgvid">
+      <source src="/assets/videos/typing.webm" type="video/webm">
+      <source src="/assets/videos/typing.mp4" type="video/mp4">
+    </video>
 
-  <div class="mdl-layout-transparent mdl-js-layout mdl-layout--fixed-header">
+    <div class="mdl-layout-transparent mdl-js-layout mdl-layout--fixed-header">
 
-    <main>
-      <h1>DR. PEPPER</h1>
-    </main>
+      <main>
 
-  </div>
+        <div class="header-block">
+          <h1>JOHN STAMATAKOS</h1>
+          <h2>SOFTWARE ENGINEER</h2>
+          <div class="hover-menu">
+
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class="front">
+                  <i class="fa fa-asterisk fa-3x" aria-hidden="true"></i>
+                </div>
+                <div class="back">
+                  <div class="backLinks">
+                    <a href="https://github.com/johnstamatakos" target="_blank">
+                      <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                      <div>GITHUB</div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/johnstamatakos" target="_blank">
+                      <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                      <div>LINKEDIN</div>
+                    </a>
+                    <a href="/assets/JohnStamatakosResume.pdf" target="_blank">
+                      <i class="fa fa-file-text fa-2x" aria-hidden="true"></i>
+                      <div>RESUME</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </main>
+
+    </div>
         
   <script type="text/javascript" src="main.bundle.js"></script>
   </body>

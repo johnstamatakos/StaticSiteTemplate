@@ -12,6 +12,8 @@ module.exports = {
     appRoot + "**/*.css",
   ],
   img: appRoot + "**/*.{ico,png,jpg}",
+  video: appRoot + "**/*.{mp4,webm}",
   js: appRoot + "**/*.bundle.js",
+  pdf: appRoot + "**/*.pdf",
   output: outputRoot
 }

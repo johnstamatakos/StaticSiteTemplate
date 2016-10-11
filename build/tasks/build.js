@@ -26,6 +26,16 @@ gulp.task('build-img', function(){
     .pipe(gulp.dest(paths.output + "assets/images"));
 });
 
+gulp.task('build-video', function(){
+  return gulp.src(paths.video)
+    .pipe(gulp.dest(paths.output));
+});
+
+gulp.task('build-pdf', function(){
+  return gulp.src(paths.pdf)
+    .pipe(gulp.dest(paths.output));
+});
+
 // transpiles changed es6 files to SystemJS format
 // the plumber() call prevents 'pipe breaking' caused
 // by errors from other gulp plugins
@@ -64,7 +74,7 @@ gulp.task('build-css', function() {
 gulp.task('build', function(callback) { 
   return runSequence(
     'clean',
-    ['build-html', 'build-img', 'build-js', 'build-css'],
+    ['build-html', 'build-img', 'build-js', 'build-css', 'build-video', 'build-pdf'],
     callback
   );
 });
