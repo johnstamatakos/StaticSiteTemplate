@@ -1,0 +1,17 @@
+@media only screen and (max-width: 736px) {
+    .front {
+        display: none;
+    }
+    .back {
+        -webkit-transform: rotateY(0deg)!important;
+        transform: rotateY(0deg)!important;
+    }
+    .flip-container:hover .flipper {
+        -webkit-transform: rotateY(0deg)!important;
+        transform: rotateY(0deg)!important;
+    }
+    .flip-container .hover .flipper {
+        -webkit-transform: rotateY(0deg)!important;
+        transform: rotateY(0deg)!important;
+    }
+}
