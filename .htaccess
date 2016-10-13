@@ -1,0 +1,5 @@
+//Caching schema
+<FilesMatch "\.(js|css|mp4|webm|pdf)$">
+Header set Cache-Control "max-age=1209600"
+</FilesMatch>
+ 
