@@ -23,7 +23,7 @@ gulp.task('build-html', function () {
 
 gulp.task('build-img', function(){
   return gulp.src(paths.img)
-    .pipe(gulp.dest(paths.output + "assets/images"));
+    .pipe(gulp.dest(paths.output));
 });
 
 gulp.task('build-video', function(){
