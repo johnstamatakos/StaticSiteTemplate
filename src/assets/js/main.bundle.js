@@ -10,20 +10,20 @@ var historyIndex = 0;
 var helpText = `
     <p>Commands:</p>
     <ul>
-        <li>help: &nbsp;show a menu of commands</li>
-        <li>clear: &nbsp;clear previous command history</li>
-        <li>cd: &nbsp;change directory</li>
-        <li>ls: &nbsp;list current available directories</li>
-        <li>exit: &nbsp;exit the application</li>
+        <li>help:&nbsp;show a menu of commands</li>
+        <li>clear:&nbsp;clear previous command history</li>
+        <li>cd:&nbsp;change directory</li>
+        <li>ls:&nbsp;list current available directories</li>
+        <li>exit:&nbsp;exit the application</li>
     </ul>
     <p>Keys:</p>
     <ul>
-        <li>up/down: &nbsp;cycle through command history</li>
+        <li>up/down:&nbsp;cycle through command history</li>
     </ul>
     <p>
-        To navigate to a directory type &nbsp;
+        To navigate to a directory type&nbsp;
         <span class="code">cd directory_name</span>&nbsp;
-        or &nbsp;<span class="code">cd ..</span><br>
+        or&nbsp;<span class="code">cd ..</span><br>
         Available Directories:
     </p>
     <ul>
@@ -34,8 +34,8 @@ var helpText = `
 var contactText = `
     <div class="contactText">
         <b>John Stamatakos</b>
-        <p>Phone: 240.818.4836</p>
-        <p>Email: jestamatakos@gmail.com</p>
+        <p>Phone:&nbsp;240.818.4836</p>
+        <p>Email:&nbsp;jestamatakos@gmail.com</p>
         <a href="https://github.com/johnstamatakos" title="Github" target="_blank"><div class="github"></div></a></li>
         <a href="https://www.linkedin.com/in/johnstamatakos/" title="Linkedin" target="_blank"><div class="linkedin"></div></a></li>
     </div>`;
@@ -48,18 +48,18 @@ var resumeText = `
     </div>`;
 var aboutText = `
     <div class="aboutText">
-        <p>I am a software engineer currently managing a small engineering team at &nbsp;
+        <p>I am a software engineer currently managing a small engineering team at&nbsp;
         <a href="http://xogroupinc.com/" target="_blank">XO Group</a>
         (<a href="https://www.theknot.com/" target="_blank">The Knot</a>,&nbsp;
         <a href="https://www.thebump.com/" target="_blank">The Bump</a>,&nbsp;
-        <a href="https://www.thenest.com/" target="_blank">The Nest</a>) 
+        <a href="https://www.thenest.com/" target="_blank">The Nest</a>)&nbsp;
         doing fullstack Javascript development 
-        in Node, &nbsp;React, &nbsp;and Angular. &nbsp;In addition, I also enjoy doing &nbsp;
-        <a href="https://github.com/penntex" target="_blank">freelance work</a>, &nbsp;contributing to 
-        OSS, &nbsp;and working at the &nbsp;
+        in Node, &nbsp;React, &nbsp;and Angular.&nbsp;In addition, I also enjoy doing&nbsp;
+        <a href="https://github.com/penntex" target="_blank">freelance work</a>,&nbsp;contributing to 
+        OSS,&nbsp;and working at the&nbsp;
         <a href="https://austin.codingbootcamp.utexas.edu" target="_blank">UT Coding Bootcamp</a>.</p>
         <p>Current Location: &nbsp;Austin, TX</p>
-        <p>Preferred Languages/Frameworks: &nbsp;Node,&nbsp; Go,&nbsp; C#,&nbsp; React</p>
+        <p>Preferred Languages/Frameworks:&nbsp;Node,&nbsp;Go,&nbsp;C#,&nbsp;React</p>
     </div>`;
 
 function processRequest(input) {
