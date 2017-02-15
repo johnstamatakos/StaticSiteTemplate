@@ -48,18 +48,18 @@ var resumeText = `
     </div>`;
 var aboutText = `
     <div class="aboutText">
-        <p>I am a software engineer currently managing a small engineering team at 
+        <p>I am a software engineer currently managing a small engineering team at &nbsp;
         <a href="http://xogroupinc.com/" target="_blank">XO Group</a>
-        (<a href="https://www.theknot.com/" target="_blank">The Knot</a>, 
-        <a href="https://www.thebump.com/" target="_blank">The Bump</a>, 
+        (<a href="https://www.theknot.com/" target="_blank">The Knot</a>,&nbsp;
+        <a href="https://www.thebump.com/" target="_blank">The Bump</a>,&nbsp;
         <a href="https://www.thenest.com/" target="_blank">The Nest</a>) 
         doing fullstack Javascript development 
-        in Node, React, and Angular.  In addition, I also enjoy doing 
-        <a href="https://github.com/penntex" target="_blank">freelance work</a>, contributing to 
-        OSS, and working at the 
+        in Node, React, and Angular. &nbsp;In addition, I also enjoy doing &nbsp;
+        <a href="https://github.com/penntex" target="_blank">freelance work</a>, &nbsp;contributing to 
+        OSS, &nbsp;and working at the &nbsp;
         <a href="https://austin.codingbootcamp.utexas.edu" target="_blank">UT Coding Bootcamp</a>.</p>
-        <p>Current Location: Austin, TX</p>
-        <p>Preferred Languages/Frameworks: Node, Go, C#, React</p>
+        <p>Current Location: &nbsp;Austin, TX</p>
+        <p>Preferred Languages/Frameworks: &nbsp;Node, Go, C#, React</p>
     </div>`;
 
 function processRequest(input) {
