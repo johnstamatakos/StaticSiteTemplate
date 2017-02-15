@@ -2,63 +2,45 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>John Stamatakos</title>
+    <title>John Stamatakos - Software Engineer</title>
     <meta name="title"  content="John Stamatakos - Software Engineer">
-    <meta name="description" content="John Stamatakos is a Software Engineer in Austin, Texas.">
+    <meta name="description" content="John Stamatakos is a Software Engineer in Austin, TX">
+    <meta name="keywords" content="Software,Engineer,Austin,Javascript,John,Stamatakos">
+    <meta name="author" content="John Stamatakos">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Cache-control" content="public">
-
-  </head>
-  <body id="index">
+    <meta property="og:title" content="John Stamatakos - Software Engineer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.johnstamatakos.me" />
+    <meta property="og:image" content="/assets/images/me.jpg" />
+    <meta property="og:description" content="John Stamatakos is a Software Engineer in Austin, TX" />
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon" />
 
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
-    <video playsinline autoplay muted loop id="bgvid">
-      <source src="/assets/videos/typing.webm" type="video/webm">
-      <source src="/assets/videos/typing.mp4" type="video/mp4">
-    </video>
+  </head>
+  <body>
 
-    <div class="mdl-layout-transparent mdl-js-layout mdl-layout--fixed-header">
+    <main>
 
-      <main>
+      <section id="terminal" class="main">
 
-        <div class="header-block">
-          <h1>JOHN STAMATAKOS</h1>
-          <h2>SOFTWARE ENGINEER</h2>
-          <div class="hover-menu">
-
-            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-              <div class="flipper">
-                <div class="front">
-                  <i class="fa fa-asterisk fa-3x" aria-hidden="true"></i>
-                </div>
-                <div class="back">
-                  <div class="backLinks">
-                    <a href="https://github.com/johnstamatakos" target="_blank">
-                      <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-                      <div>GITHUB</div>
-                    </a>
-                    <a href="https://www.linkedin.com/in/johnstamatakos" target="_blank">
-                      <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-                      <div>LINKEDIN</div>
-                    </a>
-                    <a href="/assets/JohnStamatakosResume.pdf" target="_blank">
-                      <i class="fa fa-file-text fa-2x" aria-hidden="true"></i>
-                      <div>RESUME</div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
+        <div class="top-text">
+          <p>Last login:
+            <span class="date"></span>
+          </p>
+          <p>Type help for a directory of commands</p>
+        </div>
+        <div class="text">
+          <div class="main-text"></div>
+          <div class="console-input"></div>
         </div>
 
-      </main>
-
-    </div>
+      </section>
+      
+    </main>
         
   <script type="text/javascript" src="main.bundle.js" async="true"></script>
   </body>
