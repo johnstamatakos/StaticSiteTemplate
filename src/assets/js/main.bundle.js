@@ -54,12 +54,12 @@ var aboutText = `
         <a href="https://www.thebump.com/" target="_blank">The Bump</a>,&nbsp;
         <a href="https://www.thenest.com/" target="_blank">The Nest</a>) 
         doing fullstack Javascript development 
-        in Node, React, and Angular. &nbsp;In addition, I also enjoy doing &nbsp;
+        in Node, &nbsp;React, &nbsp;and Angular. &nbsp;In addition, I also enjoy doing &nbsp;
         <a href="https://github.com/penntex" target="_blank">freelance work</a>, &nbsp;contributing to 
         OSS, &nbsp;and working at the &nbsp;
         <a href="https://austin.codingbootcamp.utexas.edu" target="_blank">UT Coding Bootcamp</a>.</p>
         <p>Current Location: &nbsp;Austin, TX</p>
-        <p>Preferred Languages/Frameworks: &nbsp;Node, Go, C#, React</p>
+        <p>Preferred Languages/Frameworks: &nbsp;Node,&nbsp; Go,&nbsp; C#,&nbsp; React</p>
     </div>`;
 
 function processRequest(input) {
