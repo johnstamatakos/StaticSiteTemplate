@@ -10,20 +10,20 @@ var historyIndex = 0;
 var helpText = `
     <p>Commands:</p>
     <ul>
-        <li>help: show a menu of commands</li>
-        <li>clear: clear previous command history</li>
-        <li>cd: change directory</li>
-        <li>ls: list current available directories</li>
-        <li>exit: exit the application</li>
+        <li>help: &nbsp;show a menu of commands</li>
+        <li>clear: &nbsp;clear previous command history</li>
+        <li>cd: &nbsp;change directory</li>
+        <li>ls: &nbsp;list current available directories</li>
+        <li>exit: &nbsp;exit the application</li>
     </ul>
     <p>Keys:</p>
     <ul>
-        <li>up/down: cycle through command history</li>
+        <li>up/down: &nbsp;cycle through command history</li>
     </ul>
     <p>
-        To navigate to a directory type 
-        <span class="code">cd directory_name</span>
-        or <span class="code">cd ..</span><br>
+        To navigate to a directory type &nbsp;
+        <span class="code">cd directory_name</span>&nbsp;
+        or &nbsp;<span class="code">cd ..</span><br>
         Available Directories:
     </p>
     <ul>
