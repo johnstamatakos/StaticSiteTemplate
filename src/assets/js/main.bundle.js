@@ -26,7 +26,7 @@ function processRequest(input) {
         el.innerHTML = helpText;
         mainText.appendChild(el);
     } else if (i === 'exit') {
-        window.location.href = "http://google.com";
+        window.location.href = 'http://google.com';
     } else if (i === 'clear') {
         mainText.innerHTML = '';
     } else if (i.indexOf('cd ') != -1) {
@@ -41,7 +41,7 @@ function processRequest(input) {
             mainText.appendChild(el);
         }
     } else if (i === secretCommand) {
-        //fn(0);
+        fn(0);
     } else {
         throwSyntaxError(i);
     }
@@ -232,9 +232,23 @@ function setTextVariables() {
         <p>Preferred Languages/Frameworks:&nbsp;Node,&nbsp;Go,&nbsp;C#,&nbsp;React</p>`;
 
     directoryText = `
-        about &nbsp; &nbsp; &nbsp; resume &nbsp; &nbsp; &nbsp; contact`
+        about &nbsp; &nbsp; &nbsp; resume &nbsp; &nbsp; &nbsp; contact`;
 }
 
+
+function fn(n){
+    document.getElementById("input").disabled = true;
+    var el = document.createElement('p');
+    el.innerHTML = 'CRITICAL ERROR';
+    mainText.appendChild(el);
+    if(n < 60) {
+        setTimeout(function(){
+            fn(++n);  
+    },500);
+    } else {
+        document.getElementById("input").disabled = true;
+    }
+}
 
 
 
