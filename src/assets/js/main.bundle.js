@@ -133,12 +133,7 @@ function init() {
     var consoleInput = document.querySelector('.console-input');
     var line = document.createElement('p');
     line.className = 'line';
-    line.innerHTML = `
-        <span class="name">` + person + `</span>:<span id="dir" class="dir">` + dir + `</span>$
-        <form id="inputForm" autocomplete="off">
-            <input id="input" type="text" autofocus>
-            <input type="submit" style="display:none" />
-        </form>`
+    line.innerHTML = '<span class="name">' + person + '</span>:<span id="dir" class="dir">' + dir + '</span>$<form id="inputForm" autocomplete="off"><input id="input" type="text" autofocus><input type="submit" style="display:none" /></form>'
     consoleInput.appendChild(line);
 
     //add submit/history cycle functionality to keys
@@ -179,65 +174,20 @@ function init() {
 }
 
 function setTextVariables() {
-    helpText = `
-        <p>Commands:</p>
-        <ul>
-            <li>help:&nbsp;show a menu of commands</li>
-            <li>clear:&nbsp;clear previous command history</li>
-            <li>cd:&nbsp;change directory</li>
-            <li>ls:&nbsp;list current available directories</li>
-            <li>exit:&nbsp;exit the application</li>
-        </ul>
-        <p>Keys:</p>
-        <ul>
-            <li>up/down:&nbsp;cycle through command history</li>
-        </ul>
-        <p>
-            To navigate to a directory type&nbsp;
-            <span class="code">cd directory_name</span>&nbsp;
-            or&nbsp;<span class="code">cd ..</span><br>
-            Available Directories:
-        </p>
-        <ul>
-            <li>about</li>
-            <li>resume</li>
-            <li>contact</li>
-        </ul>`;
+    helpText = '<p>Commands:</p><ul><li>help:&nbsp;show a menu of commands</li><li>clear:&nbsp;clear previous command history</li><li>cd:&nbsp;change directory</li><li>ls:&nbsp;list current available directories</li><li>exit:&nbsp;exit the application</li></ul><p>Keys:</p><ul><li>up/down:&nbsp;cycle through command history</li></ul><p>To navigate to a directory type&nbsp;<span class="code">cd directory_name</span>&nbsp;or&nbsp;<span class="code">cd ..</span><br>Available Directories:</p><ul><li>about</li><li>resume</li><li>contact</li></ul>';
 
-    contactText = `
-        <b>John Stamatakos</b>
-        <p>Phone:&nbsp;240.818.4836</p>
-        <p>Email:&nbsp;jestamatakos@gmail.com</p>
-        <a href="https://github.com/johnstamatakos" title="Github" target="_blank"><div class="github"></div></a></li>
-        <a href="https://www.linkedin.com/in/johnstamatakos/" title="Linkedin" target="_blank"><div class="linkedin"></div></a></li>`;
+    contactText = '<p>Phone:&nbsp;240.818.4836</p><b>John Stamatakos</b><p>Email:&nbsp;jestamatakos@gmail.com</p><a href="https://github.com/johnstamatakos" title="Github" target="_blank"><div class="github"></div></a></li><a href="https://www.linkedin.com/in/johnstamatakos/" title="Linkedin" target="_blank"><div class="linkedin"></div></a></li>';
 
-    resumeText = `
-        <div class="john">
-            <a href="/assets/JohnStamatakosResume.pdf" target="_blank"></a>
-        </div>
-        <p>Click to view my resume</p>`;
+    resumeText = '<div class="john"><a href="/assets/JohnStamatakosResume.pdf" target="_blank"></a></div><p>Click to view my resume</p>';
 
-    aboutText = `
-        <p>I am a software engineer currently managing a small engineering team at&nbsp;
-        <a href="http://xogroupinc.com/" target="_blank">XO Group</a>
-        (<a href="https://www.theknot.com/" target="_blank">The Knot</a>,&nbsp;
-        <a href="https://www.thebump.com/" target="_blank">The Bump</a>,&nbsp;
-        <a href="https://www.thenest.com/" target="_blank">The Nest</a>)&nbsp;
-        doing fullstack Javascript development 
-        in Node, &nbsp;React, &nbsp;and Angular.&nbsp;In addition, I also enjoy doing&nbsp;
-        <a href="https://github.com/penntex" target="_blank">freelance work</a>,&nbsp;contributing to 
-        OSS,&nbsp;and working at the&nbsp;
-        <a href="https://austin.codingbootcamp.utexas.edu" target="_blank">UT Coding Bootcamp</a>.</p>
-        <p>Current Location: &nbsp;Austin, TX</p>
-        <p>Preferred Languages/Frameworks:&nbsp;Node,&nbsp;Go,&nbsp;C#,&nbsp;React</p>`;
+    aboutText = '<p>I am a software engineer currently managing a small engineering team at <a href="http://xogroupinc.com/" target="_blank">XO Group</a>(<a href="https://www.theknot.com/" target="_blank">The Knot</a>,&nbsp;<a href="https://www.thebump.com/" target="_blank">The Bump</a>,&nbsp;<a href="https://www.thenest.com/" target="_blank">The Nest</a>) doing fullstack Javascript development in Node, React, and Angular. In addition, I also enjoy doing <a href="https://github.com/penntex" target="_blank">freelance work</a>, contributing to OSS, and working at the <a href="https://austin.codingbootcamp.utexas.edu" target="_blank">UT Coding Bootcamp</a>.</p><p>Current Location: &nbsp;Austin, TX</p><p>Preferred Languages/Frameworks:&nbsp;Node,&nbsp;Go,&nbsp;C#,&nbsp;React</p>';
 
-    directoryText = `
-        about &nbsp; &nbsp; &nbsp; resume &nbsp; &nbsp; &nbsp; contact`;
+    directoryText = 'about &nbsp; &nbsp; &nbsp; resume &nbsp; &nbsp; &nbsp; contact';
 }
 
 
 function fn(n){
-    document.getElementById("input").disabled = true;
+    document.getElementById('input').disabled = true;
     var el = document.createElement('p');
     el.innerHTML = 'CRITICAL ERROR';
     mainText.appendChild(el);
@@ -246,7 +196,7 @@ function fn(n){
             fn(++n);  
     },500);
     } else {
-        document.getElementById("input").disabled = true;
+        document.getElementById('input').disabled = true;
     }
 }
 
