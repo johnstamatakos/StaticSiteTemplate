@@ -2,6 +2,7 @@ var person, dir, helpText, contactText, resumeText, aboutText;
 var history = [];
 var historyIndex = 0;
 var mainText = document.querySelector('.main-text');
+var secretCommand = 'marioharper';
 
 window.onload = function() {
     init();
@@ -39,6 +40,18 @@ function processRequest(input) {
             el.innerHTML = '';
             mainText.appendChild(el);
         }
+    } else if (i === secretCommand) {
+        (function fn(n){
+            document.getElementById("input").disabled = true;   
+            var el = document.createElement('p');
+            el.innerHTML = 'CRITICAL ERROR';
+            mainText.appendChild(el);
+            if(n < 60){
+                setTimeout(function(){  fn(++n);  },500);
+            } else {
+                document.getElementById("input").disabled = true;
+            }
+        }( 0 ));
     } else {
         throwSyntaxError(i);
     }
